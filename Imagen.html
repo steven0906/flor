@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flores Amarillas</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      background:#FFD7E9; 
+      display:flex; 
+      height:100vh; 
+      justify-content:center; 
+      align-items:center; 
+    }
+    .card { 
+      background:#fff3da; 
+      padding:20px; 
+      border-radius:12px; 
+      box-shadow:0 4px 12px rgba(0,0,0,0.1); 
+      text-align:center; 
+      max-width:420px; 
+      overflow:hidden; /* oculta lo que se sale del cuadro */ 
+    }
+    img { 
+      margin-top:15px; 
+      width:100%; 
+      border-radius:12px; 
+      transform: translateY(100%); /* empieza abajo */ 
+      opacity:0; 
+      animation: cascadeUp 1.5s ease-out forwards; 
+    }
+    @keyframes cascadeUp {
+      0% { transform: translateY(100%); opacity:0; }
+      60% { transform: translateY(-10%); opacity:1; }
+      100% { transform: translateY(0); opacity:1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>🌼 Flores Amarillas para ti 🌼</h2>
+    <p>Un detalle de amor y amistad, para alegrar tu día con cariño y color.</p>
+    <img src="https://i.ytimg.com/vi/ZSSOiJaMIk0/hqdefault.jpg" alt="Flores amarillas">
+  </div>
+</body>
+</html>
+

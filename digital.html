@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Elección de Flores</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#FFD7E9; display:flex; height:100vh; justify-content:center; align-items:center; }
+    .card { background:#fff3da; padding:50px; border-radius:14px; box-shadow:0 4px 14px rgba(0,0,0,0.12); text-align:center; max-width:440px; }
+    .buttons { margin-top:18px; display:flex; justify-content:space-around; gap:12px; }
+    button { flex:1; padding:10px 16px; border:none; border-radius:10px; font-weight:bold; cursor:pointer; }
+    a{flex:1; padding:10px 16px; border:none; border-radius:10px; font-weight:bold; cursor:pointer;}
+    .btn1 { background:#ffca28; }
+    .btn2 { background:#81c784; color:#fff; }
+    button:hover { opacity:0.9; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>🌼 ¿Quieres flores amarillas? 🌼</h2>
+    <p>Elige cómo prefieres recibirlas:</p>
+    <div class="buttons">
+      <button class="btn1" onclick="alert('Debes escribirle a Steven ✍️📱')">Presenciales</button>
+      <a class="btn2" href="imagen.html">Digitales</a>
+    </div>
+  </div>
+</body>
+</html>
